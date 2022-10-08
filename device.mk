@@ -27,7 +27,9 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/init/bond.rc:$(TARGET_COPY_OUT_ODM)/etc/init/bond.rc
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay \
+    $(DEVICE_PATH)/overlay-xdroid
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)

@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_bond.mk
+    $(LOCAL_DIR)/xdroid_bond.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_bond-eng \
-    lineage_bond-user \
-    lineage_bond-userdebug
+    xdroid_bond-eng \
+    xdroid_bond-user \
+    xdroid_bond-userdebug

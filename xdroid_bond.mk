@@ -12,16 +12,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 ## Device
 $(call inherit-product, device/huawei/bond/device.mk)
 
-## LineageOS
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+## xdroidOSS
+$(call inherit-product, vendor/xdroid/config/common.mk)
 
 # Device identifier
-PRODUCT_NAME := lineage_bond
+PRODUCT_NAME := xdroid_bond
 PRODUCT_DEVICE := bond
 PRODUCT_BRAND := HUAWEI
 PRODUCT_MODEL := Honor 7X
 PRODUCT_MANUFACTURER := HUAWEI
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
+
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_USES_AOSP_RECOVERY := true
+
+# xdroid build flags
+XDROID_BOOT := 1080p
+XDROID_MAINTAINER := wudilsr
 
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
