@@ -68,4 +68,5 @@
     <value>1484</value>
     <value>2323</value>
   </array>
+  <item name="bluetooth.controller.voltage">3300</item>
 </device>
