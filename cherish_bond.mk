@@ -12,16 +12,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 ## Device
 $(call inherit-product, device/huawei/bond/device.mk)
 
-## LineageOS
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+## cherish
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := lineage_bond
+PRODUCT_NAME := cherish_bond
 PRODUCT_DEVICE := bond
 PRODUCT_BRAND := HUAWEI
 PRODUCT_MODEL := Honor 7X
 PRODUCT_MANUFACTURER := HUAWEI
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
+
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_QUICK_TAP := true
+USE_PIXEL_CHARGING := true
+TARGET_INCLUDE_CARRIER_SETTINGS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=wudilsr
 
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
