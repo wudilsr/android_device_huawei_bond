@@ -12,11 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 ## Device
 $(call inherit-product, device/huawei/bond/device.mk)
 
-## LineageOS
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+## ArrowOS
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Device identifier
-PRODUCT_NAME := lineage_bond
+PRODUCT_NAME := arrow_bond
 PRODUCT_DEVICE := bond
 PRODUCT_BRAND := HUAWEI
 PRODUCT_MODEL := Honor 7X
